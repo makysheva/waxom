@@ -1,0 +1,1432 @@
+*, *:before, *:after
+    -moz-box-sizing: border-box
+    -webkit-box-sizing: border-box
+    -o-box-sizing: border-box
+    -ms-box-sizing: border-box
+    box-sizing: border-box
+    transition: .25s ease-in-out
+
+html, body
+    height: 100%
+
+html
+    font-size: 100%
+    overflow-y: scroll
+    -webkit-text-size-adjust: 100%
+    -ms-text-size-adjust: 100%
+
+body
+    margin: 0
+    padding: 0
+
+p, h2 
+    margin: 0
+    padding: 0
+
+a
+    text-decoration: none
+
+    &:hover, &:active, &:visited, &:focus, &:link
+        text-decoration: none
+
+    &:hover, &:active 
+        outline: 0
+        text-decoration: none
+
+ul
+    list-style-type: none
+
+div
+    margin: 0
+    padding: 0
+
+.container
+    max-width: 1000px
+    margin: auto
+    width: 100%
+
+@font-face 
+    font-family: 'Raleway', 'sans-serif'
+    src: url(../fonts/raleway/Raleway-Regular.ttf)
+    font-weight: 400
+    
+@font-face 
+    font-family: 'Raleway', 'sans-serif'
+    src: url(../fonts/raleway/Raleway-Medium.ttf)
+    font-weight: 500
+
+@font-face 
+    font-family: 'Raleway', 'sans-serif'
+    src: url(../fonts/raleway/Raleway-SemiBold.ttf)
+    font-weight: 600
+
+@font-face 
+    font-family: 'Raleway', 'sans-serif'
+    src: url(../fonts/raleway/Raleway-ExtraBold.ttf)
+    font-weight: 800
+
+@font-face 
+    font-family: 'Montserrat', sans-serif
+    src: url(../fonts/montserrat/Montserrat-Light.ttf)
+    font-weight: 400
+
+@font-face 
+    font-family: 'FontAwesome'
+    src: url(../fonts/font-awesome/fonts/fontawesome-webfont.ttf)
+    font-weight: 400
+
+@font-face 
+    font-family: 'Roboto'
+    src: url(../fonts/roboto/Roboto-Regular.ttf)
+    font-weight: 400
+
+.header-section
+    background-image: url(../img/bg.png)
+    background-repeat: no-repeat	
+    background-size: cover
+    color: #fff
+    background-repeat: no-repeat
+    background-position: center center
+    width: 100%
+    opacity: 1
+
+.header
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    flex-wrap: wrap
+    padding-top: 36px
+    align-items: center
+    position: relative
+
+.logo
+    display: flex
+    align-items: center
+
+    &__img
+        max-width: 60px
+        width: 100%
+
+    &__brandname
+        font-family: 'Raleway'
+        font-size: 34px
+        font-weight: 400
+        color: #fff
+
+.menu
+    &__list
+        display: flex
+        flex-wrap: wrap
+        align-items: center
+        justify-content: center
+        font-family: 'Montserrat'
+        font-size: 14px
+        font-weight: 300
+        color: #fff
+
+    &__item
+        padding-right: 20px
+
+        &:last-child
+            padding-right: 0
+
+    &__link
+        color: #fff
+        font-size: 13px
+
+        &:hover
+            color: #c7b299
+
+    
+    &-mobile
+        margin: 0 30px 0 0
+        display: none
+        font-family: 'Montserrat'
+        font-size: 14px
+        font-weight: 300
+        color: #fff
+
+        &__item
+            text-decoration: none
+            color: #fff
+            line-height: 70px
+
+.label
+    margin: 0 40px 0 0
+    font-size: 26px
+    line-height: 70px
+    display: none
+    width: 26px
+
+.toggle
+    display: none
+
+.nav
+    position: absolute
+    left: 0
+    text-align: left
+    height: 70px
+    line-height: 70px
+    padding: 10px
+    max-width: 600px
+    width: 100%
+
+.widget
+    color: #fff
+    font-family: 'FontAwesome'
+    cursor: pointer
+    font-size: 19px
+
+    &__icon
+        padding-right: 40px
+
+        &:last-child
+           padding-right: 0 
+
+    &__icon:hover
+        color: #c7b299
+
+.owl-theme .owl-nav
+    position: absolute
+    top: 50px
+    left: 0
+    right: 0
+
+.owl-nav
+    cursor: pointer
+
+.owl-prev
+    position: absolute
+    left: 10px
+
+.owl-next
+    right: 10px
+    position: absolute
+
+.owl-carousel .owl-item .post__arrow
+    display: inherit
+    width: 10px
+
+.owl-theme .owl-nav [class*='owl-']:hover
+    background: none
+    color: #AFA192
+
+.slider-section
+    display: flex
+    flex-direction: row
+    justify-content: space-around
+    flex-wrap: wrap
+    padding-top: 160px
+
+.slider
+    text-align: center
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+
+    &-header
+        position: relative
+        padding-bottom: 42px
+
+    &__title
+        font-family: 'Raleway'
+        font-size: 36px
+        font-weight: 500
+        color: #fff
+        max-width: 465px
+        width: 100%
+        margin: auto
+        padding-bottom: 18px
+
+    &__headline
+        font-family: 'Raleway'
+        font-size: 52px
+        font-weight: 800
+        color: #fff
+        max-width: 594px
+        width: 100%
+        padding-bottom: 36px
+
+    &__text
+        font-family: 'Montserrat'
+        font-size: 16px
+        font-weight: 400
+        color: #fff
+        max-width: 574px
+        width: 100%
+
+    &__btn
+        outline: 0
+        border: none
+        border-radius: 3px
+        padding: 18px 38px
+        font-family: 'Raleway'
+        font-size: 14px
+        font-weight: 800
+        color: #fff
+        letter-spacing: 1px
+        text-transform: uppercase
+        background-color: #998675
+        margin-top: 54px
+        cursor: pointer
+        margin-bottom: 150px
+
+        &:hover
+            box-shadow: inset 0 -62px 0px rgba(0,0,0,0.14)
+
+.control
+    display: flex
+    flex-direction: row
+    justify-content: center
+    padding-bottom: 50px
+    flex-wrap: wrap
+
+    &__item
+        background-color: inherit
+        border-radius: 50%
+        border: 2px solid #998675
+        height: 18px
+        margin-right: 15px
+        width: 18px
+        cursor: pointer
+        
+        &:last-child
+            margin-right: 0
+
+        &-active
+            background-color: #998675
+
+.services
+    display: flex
+    text-align: center
+    padding-top: 90px
+    justify-content: space-around
+    padding-bottom: 80px
+
+.service
+    padding: 0
+    cursor: pointer
+
+    &__img
+        padding-bottom: 21px    
+
+    &__title
+        font-family: 'Raleway'
+        font-size: 20px
+        font-weight: 600
+        color: #555
+        padding-bottom: 18px
+
+    &__descr
+        font-family: 'Montserrat'
+        font-size: 12px
+        font-weight: 400
+        color: #8c8c8c
+        max-width: 200px
+        width: 100%
+
+    &__line
+        display: block
+        border: 2px solid #f1eee9
+        max-width: 72px
+        width: 100%
+        margin: auto
+        margin-top: 30px
+        height: 1px
+    
+.service_active
+    color: #c7b299
+
+.portfolio
+    background-color: #fbfaf8
+    text-align: center
+    height: 564px
+
+    &__title
+        font-family: 'Raleway'
+        font-size: 24px
+        font-weight: 600
+        color: #555
+        padding-bottom: 18px
+        text-align: center
+        padding-top: 72px
+
+    &__descr
+        font-family: 'Montserrat'
+        font-size: 16px
+        font-weight: 400
+        color: #8c8c8c
+        max-width: 740px
+        width: 100%
+        margin: auto
+        text-align: center
+
+    &__works
+        position: relative
+        margin-top: 121px
+        max-width: 1000px
+        width: 100%
+        margin-right: auto
+        margin-left: auto
+        padding-top: 36px
+
+        &-item
+            width: 40%
+            height: 250px
+            background-position: center
+            background-size: cover
+            position: absolute
+
+            &--left
+                background-image: url(../img/browser-left.png)
+    
+            &--center
+                background-image: url(../img/browser-center.png)
+                left: 50%
+                transform: translateX(-50%)
+                z-index: 1
+                top: -35px
+                width: 52%
+                height: 321px
+    
+            &--right
+                background-image: url(../img/browser-right.png)
+                right: 0
+
+.text-boxes
+    background: linear-gradient(70deg, #211b19, #4e3427)
+    height: 144px
+
+.text-box
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+
+    &__title
+        font-family: 'Raleway'
+        font-size: 28px
+        font-weight: 400
+        color: #fff
+        margin-top: 37px
+
+        &--allotment
+            color: #c7b299
+
+    &__descr
+        font-family: 'Montserrat'
+        font-size: 16px
+        font-weight: 400
+        color: #8c8c8c
+        max-width: 740px
+        width: 100%
+        margin-top: 14px
+
+    &__btn
+        outline: 0
+        border: none
+        border-radius: 3px
+        padding: 18px 38px
+        font-family: 'Raleway'
+        font-size: 14px
+        font-weight: 800
+        color: #fff
+        letter-spacing: 1px
+        text-transform: uppercase
+        background-color: #998675
+        margin-top: 54px
+        cursor: pointer
+        margin-bottom: 150px
+        box-shadow: inset 0 -4px 0 #736357
+
+        &:hover
+            box-shadow: inset 0 -62px 0px rgba(0,0,0,0.14)
+
+.box
+    display: flex
+    flex-direction: column
+
+.project
+    display: flex
+    align-items: center
+    flex-direction: column
+    flex-wrap: wrap
+
+    &__title
+        font-family: 'Raleway'
+        font-size: 30px
+        font-weight: 600
+        color: #555
+        padding-bottom: 18px
+        text-align: center
+        padding-top: 72px
+
+    &__descr
+        font-family: 'Montserrat'
+        font-size: 16px
+        font-weight: 400
+        color: #8c8c8c
+        max-width: 740px
+        width: 100%
+        text-align: center
+        margin: auto
+
+    &__content
+        display: flex
+        flex-wrap: wrap
+        flex-direction: row
+        justify-content: space-around
+        align-items: center
+
+    &__item
+        margin-bottom: 26px
+        display: flex
+        flex-direction: column
+        position: relative
+
+        &:hover .project__overlay
+            opacity: 1
+
+        &:hover .project__description
+            background-color: #362f2d
+            transition: opacity .2s ease-in
+
+
+        &:hover .project__description::before
+            color: #362f2d
+            transition: opacity .2s ease-in
+
+        &_hidden
+            display: none
+
+    &__overlay
+        position: absolute
+        top: 0
+        left: 0
+        opacity: 0
+        width: 100%
+        height: 100%
+        background-color: rgba(0, 0, 0, 0.3)
+        transition: opacity .2s ease-in
+        cursor: pointer
+
+        &_link
+            padding-right: 11px
+            position: absolute
+            left: 40%
+            top: 32%
+
+        &_lupa
+            position: absolute
+            right: 40%
+            top: 32%
+
+    &__img
+        max-width: 305px
+        width: 100%
+    
+    &__description
+        background-color: #fbfaf8
+        padding-left: 5px
+        position: relative
+
+        &::before
+            content: '\f0d8'
+            display: block
+            font-family: 'FontAwesome'
+            font-size: 30px
+            position: absolute
+            top: -20px
+            color: #fbfaf8
+
+    &__headline
+        font-family: 'Raleway'
+        font-size: 20px
+        font-weight: 500
+        color: #c7b299
+        padding-bottom: 10px
+        padding-top: 28px
+
+    &__text
+        font-family: 'Montserrat'
+        font-size: 14px
+        font-weight: 400
+        color: #d1d1d1
+        padding-bottom: 27px
+
+    &__btn
+        outline: 0
+        border: none
+        border-radius: 3px
+        padding: 18px 38px
+        font-family: 'Raleway'
+        font-size: 14px
+        font-weight: 800
+        color: #fff
+        letter-spacing: 1px
+        text-transform: uppercase
+        background-color: #998675
+        margin-top: 54px
+        cursor: pointer
+        margin-bottom: 150px
+        box-shadow: inset 0 -4px 0 #736357
+
+        &:hover
+            box-shadow: inset 0 -62px 0px rgba(0,0,0,0.14)
+
+.filters
+    margin-bottom: 70px
+    margin-top: 72px
+
+.filter
+    display: flex
+    justify-content: center
+
+    &__item
+        padding-right: 36px
+
+        &:last-child
+            padding-right: 0
+
+    &__link
+        border: 1px solid #ebebeb
+        border-radius: 4px
+        font-family: 'Montserrat'
+        font-size: 14px
+        font-weight: 400
+        color: #8c8c8c
+        max-width: 740px
+        width: 100%
+        text-align: center
+        padding: 10px 18px
+        background-color: inherit
+        
+
+        &:hover
+            background-color: #998675
+            color: #fff
+
+.video-section
+    background-image: url(../img/bg-video.png)
+    background-repeat: no-repeat	
+    background-size: cover
+    color: #fff
+    background-repeat: no-repeat
+    background-position: center center
+    width: 100%
+    height: 100%
+    opacity: 1
+
+.video
+    display: flex
+    flex-direction: column
+    align-items: center
+
+    &__nav
+        max-width: 100px
+        width: 100%
+        max-height: 100px
+        width: 100%
+        margin-top: 200px
+
+    &__link
+        width: 96px
+        height: 96px
+        background: rgba(0,0,0,0.2)
+        border-radius: 100%
+        padding: 13px
+        position: relative
+        display: inline-block
+        color: #fff
+        transition: all 0.3s
+
+        &:hover .video__icon
+            color: #fff
+            border-color: #c7b299
+
+    &__icon
+        display: block
+        width: 72px
+        height: 72px
+        margin: 0 auto
+        text-indent: 5px
+        border: 4px solid #fff
+        text-align: center
+        border-radius: 100%
+        color: #fff
+        transition: color 0.3s, border-color .3s
+        padding-top: 16px
+
+
+    &__title
+        font-family: 'Raleway'
+        font-size: 30px
+        font-weight: 600
+        color: #fff
+        padding-bottom: 20px
+        text-align: center
+        padding-top: 36px
+
+    &__descr
+        font-family: 'Montserrat'
+        font-size: 16px
+        font-weight: 400
+        color: #fff
+        max-width: 558px
+        width: 100%
+        text-align: center
+        margin: auto
+
+    &__time
+        color: #c7b299
+        font-family: 'Montserrat'
+        font-size: 14px
+        font-weight: 500
+        max-width: 558px
+        width: 100%
+        text-align: center
+        margin: auto
+        padding-top: 40px
+        padding-bottom: 198px
+
+.devices
+    display: flex
+    flex-direction: row
+    padding-top: 72px
+    flex-wrap: wrap
+    justify-content: center
+
+.device
+    padding: 0
+
+    &__items
+        padding-left: 72px
+
+    &__item
+        display: flex
+        flex-direction: row
+        align-items: center
+
+    &__img
+        height: auto
+        max-width: 400px
+
+    &__title
+        font-family: 'Raleway'
+        font-size: 30px
+        font-weight: 600
+        color: #555
+        padding-bottom: 20px
+        padding-top: 36px
+        letter-spacing: 1px
+        vertical-align: 2px
+
+    &__descr
+        font-family: 'Montserrat'
+        font-size: 16px
+        font-weight: 400
+        color: #8c8c8c
+        max-width: 584px
+        width: 100%
+        line-height: 26px
+        padding-bottom: 54px
+
+    &__arrow
+        padding-right: 20px
+
+    &__text
+        font-family: 'Montserrat'
+        font-size: 15px
+        font-weight: 400
+        color: #8c8c8c
+        max-width: 387px
+        width: 100%
+
+.counters-section
+    background: linear-gradient(70deg, #211b19, #4e3427)
+    height: 300px
+    display: flex
+
+.counters
+    display: flex
+    justify-content: space-around
+    flex-wrap: wrap
+    align-items: center
+
+.counter
+    padding: 0
+    margin: auto
+    text-align: center
+
+    &__num
+        font-family: 'Montserrat'
+        font-size: 48px
+        font-weight: 400
+        color: #fff
+        padding-bottom: 18px
+        padding-top: 18px
+
+    &__descr
+        font-family: 'Montserrat'
+        font-size: 14px
+        font-weight: 400
+        color: #c7b299
+        text-transform: uppercase
+
+        &::after
+            content: ''
+            display: block
+            border: 1px solid #fff
+            max-width: 28px
+            width: 100%
+            margin: auto
+            margin-top: 18px
+
+.posts
+    padding-top: 72px
+    padding-bottom: 70px
+
+    &__info
+        text-align: center
+
+    &__title
+        font-family: 'Raleway'
+        font-size: 30px
+        font-weight: 600
+        color: #555
+        padding-bottom: 18px
+        letter-spacing: 1px
+        vertical-align: 2px
+
+    &__descr
+        font-family: 'Montserrat'
+        font-size: 16px
+        font-weight: 400
+        color: #8c8c8c
+        max-width: 738px
+        width: 100%
+        line-height: 26px
+        padding-bottom: 40px
+        margin: auto
+
+
+.post
+    &__list
+        display: flex
+        flex-direction: row
+        flex-wrap: wrap
+        align-items: center
+        justify-content: space-around
+
+    &__item
+        display: flex
+        flex-wrap: wrap
+        flex-direction: column
+        border: 1px solid #f8f8f8
+        cursor: pointer
+        position: relative
+
+        &:hover .post__content
+            background-color: #362F2D
+
+        &:hover .post__num
+            background-color: #c7b299
+
+        &:hover .post__month
+            background-color: #a48d72
+
+    &__content
+        padding-bottom: 10px
+
+    &__img
+        width: 100%
+        margin: auto
+
+    &__title
+        font-family: 'Raleway'
+        font-size: 20px
+        font-weight: 600
+        color: #555
+        padding-bottom: 18px
+        letter-spacing: 1px
+        padding-top: 9px
+        vertical-align: 2px
+        padding-left: 8px
+
+    &__descr
+        font-family: 'Montserrat'
+        font-size: 14px
+        font-weight: 400
+        color: #8c8c8c
+        max-width: 280px
+        width: 100%
+        padding-bottom: 18px
+        padding-left: 8px
+
+    &__link
+        font-family: 'Montserrat'
+        font-size: 14px
+        font-weight: 400
+        color: #c7b299
+        // max-width: 280px
+        // width: 100%
+        padding-bottom: 9px
+        padding-right: 9px
+        padding-left: 8px
+
+    &__arrow
+        padding-left: 4px
+
+    &__date
+        display: flex
+        flex-direction: column
+        align-items: center
+        z-index: 1
+        position: absolute
+        background-color: #252525
+        margin: 6px 0 0 6px
+        border-radius: 3px 3px 0px 0px
+
+    &__num
+        font-family: 'Montserrat'
+        font-size: 24px
+        font-weight: 400
+        color: #fff
+        background-color: #363636
+        padding: 3px 4px
+        transition: background-color .4s
+
+    &__month
+        font-family: 'Roboto'
+        font-size: 12px
+        font-weight: 400
+        color: #fff
+        background-color: #252525
+        padding: 4px 7px
+        transition: background-color .4s
+
+    &__overlay
+        position: absolute
+        top: 0
+        bottom: 0
+        left: 0
+        right: 0
+        opacity: 0
+        transition: all .4s
+        background: rgba(0,0,0,0.45)
+
+        &:hover
+            opacity: 1
+
+    &__overlay_lupa
+        position: absolute
+        top: 30%
+        left: 45%
+        max-width: 31px
+        width: 100%
+
+.navigation
+    text-align: center
+    cursor: pointer
+    padding-top: 36px
+
+    &__icon
+        color: #d1d1d1
+        background-color: inherit
+        height: 24px
+        width: 24px
+        background: none
+        border: 2px solid rgba(0,0,0,0.15)
+        border-radius: 100%
+        transition: all .3s
+        position: relative
+        padding: 3px 2px 0 2px
+        font-size: 14px
+        margin-right: 3px
+        
+
+        &:hover
+            border-color: #c7b299
+
+        &:last-child
+            margin-right: 0
+
+.partners
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    justify-content: space-around
+    align-items: center
+    padding-top: 148px
+
+
+    &-section
+        background-image: url(../img/bg-partners.png)
+        background-repeat: no-repeat	
+        background-size: cover
+        background-repeat: no-repeat
+        background-position: center center
+        width: 100%
+        height: 486px
+        opacity: 1
+
+.footer
+    background-color: #191919
+
+    &-widget
+        height: 504px
+        width: 100%
+        display: flex
+        flex-direction: row
+        justify-content: space-around
+        align-items: flex-start
+        padding-top: 72px
+        flex-wrap: wrap
+        margin-bottom: 30px
+
+.about
+    padding: 0
+
+    &__descr
+        font-family: 'Montserrat'
+        font-size: 14px
+        font-weight: 400
+        color: #555
+        max-width: 210px
+        width: 100%
+        padding-bottom: 36px
+        padding-right: 9px
+        padding-left: 8px
+        padding: 28px 0 18px 0
+
+    &__link
+        font-family: 'Montserrat'
+        font-size: 14px
+        font-weight: 400
+        color: #d1d1d1
+
+.recent-post
+    padding: 0
+    cursor: pointer
+    max-width: 203px
+    width: 100%
+
+    &:hover .recent-post__date
+        color: #fff
+
+    &:hover .recent-post__descr
+        color: #c7b299
+
+
+    &__title
+        font-family: 'Raleway'
+        font-size: 24px
+        font-weight: 600
+        color: #fff
+        padding-bottom: 36px
+        letter-spacing: 1px
+        
+    &__date
+        font-family: 'Montserrat'
+        font-size: 12px
+        font-weight: 400
+        color: #363636
+        padding-bottom: 18px
+        padding-top: 10px
+
+    &__descr
+        font-family: 'Montserrat'
+        font-size: 14px
+        font-weight: 400
+        color: #555
+        max-width: 252px
+        width: 100%
+        padding-bottom: 18px
+        border-bottom: 1px solid #252525
+
+.twitter
+    border-bottom: 1px solid #252525
+    cursor: pointer
+    max-width: 200px
+    width: 100%
+
+    &__title
+        font-family: 'Raleway'
+        font-size: 24px
+        font-weight: 600
+        color: #fff
+        padding-bottom: 36px
+        letter-spacing: 1px
+        
+    &__post
+        font-family: 'Montserrat'
+        font-size: 14px
+        font-weight: 400
+        color: #555
+        padding-top: 18px
+        max-width: 270px
+        width: 100%
+
+    &_mark
+        font-family: 'Montserrat'
+        font-size: 14px
+        font-weight: 400
+        color: #00bff3
+
+        &-link
+            color: #959595
+
+    &__time
+        font-family: 'Montserrat'
+        font-size: 12px
+        font-weight: 400
+        color: #363636
+        padding-bottom: 8px
+        padding-top: 10px
+
+
+.dribble
+    padding: 0
+
+    &__list
+        display: flex
+        flex-direction: row
+        flex-wrap: wrap
+        max-width: 270px
+        width: 100%
+        justify-content: space-around
+
+    &__title
+        font-family: 'Raleway'
+        font-size: 24px
+        font-weight: 600
+        color: #fff
+        padding-bottom: 36px
+        letter-spacing: 1px
+
+.copy
+    font-family: 'Montserrat'
+    font-size: 13px
+    font-weight: 400
+    color: #555
+
+.line
+    padding-left: 10px
+    padding-right: 10px
+    color: #252525
+
+.contacts
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    justify-content: space-around
+    height: 108px
+    background-color: #111
+    align-items: center
+
+.contact
+    cursor: pointer
+
+    &_mark
+        font-family: 'Montserrat'
+        font-size: 13px
+        font-weight: 400
+        color: #959595
+
+    &__link
+        color: #555
+
+        &:hover
+        color: #c7b299
+
+
+/*MEDIA*/
+@media screen and (max-width: 1920px)
+    .container
+        max-width: 1800px
+
+    .menu__link
+        font-size: 19px
+
+    .project__content
+        max-width: 1000px
+        width: 100%
+
+@media screen and (max-width: 1820px)
+    .container
+        max-width: 1600px
+
+@media screen and (max-width: 1720px)
+    .container
+        max-width: 1500px
+
+@media screen and (max-width: 1620px)
+    .container
+        max-width: 1400px
+
+@media screen and (max-width: 1520px)
+    .container
+        max-width: 1200px
+
+@media screen and (max-width: 1420px)
+    .container
+        max-width: 1000px
+
+    .menu__link
+        font-size: 13px
+
+@media screen and (max-width: 1220px)
+    .header
+        justify-content: space-around
+
+@media screen and (max-width: 1000px)
+    .container
+        max-width: 800px
+
+@media screen and (max-width: 990px)
+    .container
+        max-width: 700px
+
+    .logo
+        margin: auto
+
+    .menu 
+        display: none
+
+    .label
+        display: block
+    
+    .menu-mobile 
+        text-align: center
+        width: 100%
+        display: none
+        background-color: #36393C
+        background-clip: border-box
+        z-index: 100
+        position: relative
+
+        &__item 
+            display: block
+            border-bottom: 1px solid #eaeaeb
+
+            &:hover
+                background-color: #464B50
+    
+    .toggle:checked + .menu-mobile
+        display: block
+    
+    .portfolio__works
+        max-width: 753px
+
+    .portfolio__works-item--left, .portfolio__works-item--right
+        display: none
+
+    .portfolio__works-item--center
+        top: -64px
+        width: 74%
+        height: 351px
+
+    .owl-nav
+        display: none
+
+    .service__title
+        font-size: 18px
+
+    .services
+        max-width: 589px
+        flex-wrap: wrap
+        margin: auto
+
+    .text-box__title
+        font-size: 24px
+
+    .text-box__descr
+        font-size: 15px
+
+    .devices
+        flex-direction: column-reverse
+
+    .device__list
+        text-align: center
+        margin: auto
+
+    .device__text
+        text-align: left
+
+    .device__img
+        margin: auto
+        padding-top: 48px
+
+    .partners-section
+        height: 383px
+
+    .partner
+        max-width: 136px
+        width: 100%
+
+    .footer-widget
+        height: auto
+        flex-direction: column
+        align-items: center
+
+    .footer__item
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: baseline
+        max-width: 500px
+        width: 100%
+
+        & .logo
+            margin: 0
+
+    .about__descr
+        max-width: 500px
+        font-size: 16px
+        line-height: 22px
+
+    .recent-post 
+        max-width: 500px
+
+    .recent-post__title
+        padding-top: 23px
+        padding-bottom: 12px
+
+    .recent-post__date
+        font-size: 14px
+
+    .recent-post__descr
+        max-width: 437px
+
+    .twitter
+        max-width: 500px
+
+        &__title
+            padding-top: 22px
+
+        &__post
+            font-size: 16px
+            max-width: 500px
+
+        &_mark
+            font-size: 16px
+
+        &__time
+            font-size: 15px
+
+    .dribble__title
+        padding-top: 22px
+
+        &__list
+            max-width: 300px
+            justify-content: space-around
+            padding-bottom: 30px
+
+    .contacts
+        display: flex
+        flex-direction: column
+
+    .counters-section
+        height: 500px
+
+    .counters
+        flex-direction: row
+        max-width: 422px
+        margin: auto
+    
+    .counter
+        margin-bottom: 13px
+        margin-top: 40px
+
+@media screen and (max-width: 700px)
+    .container
+        max-width: 500px
+
+    .portfolio__works-item--center
+        top: -83px
+
+    .text-boxes
+        max-height: 310px
+        height: 100%
+
+    .filters
+        margin-bottom: 0
+
+    .filter
+        flex-wrap: wrap
+        flex-direction: row
+
+        &__item
+            padding-bottom: 43px
+
+    .counters
+        flex-direction: column
+
+    .counters-section
+        height: 1200px
+
+    .partner
+        max-width: 108px
+
+    .dribble__list
+        padding-bottom: 23px
+
+    .service
+        padding-bottom: 34px
+
+@media screen and (max-width: 500px)
+    .container
+        max-width: 300px
+
+    .slider
+        &__title
+            font-size: 24px
+
+        &__headline
+            font-size: 33px
+
+    .portfolio__works-item--center 
+            top: -89px
+            width: 100%
+            height: 294px
+
+    .filter
+        flex-direction: column
+        align-items: center
+        justify-content: center
+
+    .device
+        &__list
+            text-align: left
+    
+        &__items
+            padding-left: 0
+
+        &__img
+            max-width: 357px
+            padding-right: 49px
+
+
+    .video__descr
+        max-width: 322px
+
+    .partners-section
+        max-height: 526px
+        height: 100%
+
+    .partners
+        padding-top: 69px
+        flex-direction: column
+
+    .partner
+        padding-bottom: 31px
+
+    .contacts
+        height: 147px
+
+    .contact
+        display: flex
+        flex-direction: column
+
+    .copy
+        padding-bottom: 29px
